@@ -14,6 +14,7 @@ df.describe()
 df=df.drop([0,1])
 print(df.drop('Idade',axis=1))
 
+
 #Showing how many items in all columns
 df.count()
 # Alunos  9 
@@ -88,5 +89,7 @@ df['Idade'].div(10)
 df['Notas'].div(10)
 #Not add in string columns
 
+#function loc to localization of items in the Dataframe
+print(df.loc[df['Idade'] > 12.0])
 
 
